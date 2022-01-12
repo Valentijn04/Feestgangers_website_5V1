@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feestgangers", "Feestgangers\Feestgangers.csproj", "{662C9756-1927-470C-8CA0-589DFBD02DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{662C9756-1927-470C-8CA0-589DFBD02DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662C9756-1927-470C-8CA0-589DFBD02DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662C9756-1927-470C-8CA0-589DFBD02DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662C9756-1927-470C-8CA0-589DFBD02DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D9E8C46-4146-4E8D-AA0A-EAC2924EBFFD}
+	EndGlobalSection
+EndGlobal
