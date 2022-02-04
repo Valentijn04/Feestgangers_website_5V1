@@ -15,6 +15,7 @@ nav{
 }
 
 article{
+    height:520px;
     background-color: purple;
     width:70vw;
 }
