@@ -3,25 +3,25 @@
 }
 
 header{
-    background-color: red;
+    background-color: indianred;
     height:200px;
 }
 
 nav{
     width:30vw;
-    background-color: black;
+    background-color: grey;
     color:white;
    
 }
 
 article{
     height:520px;
-    background-color: purple;
+    background-color: antiquewhite;
     width:70vw;
 }
 
 footer{
-    background-color: orange;
+    background-color: lightyellow;
     position:fixed;
     bottom:0px;
     width:100%;
