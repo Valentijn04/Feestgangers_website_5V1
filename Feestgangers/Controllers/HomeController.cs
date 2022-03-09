@@ -34,6 +34,16 @@ namespace Feestgangers.Controllers
             return View();
         }
 
+        [HttpPost]
+       
+        public IActionResult contact(string firstname, string lastname)
+        {
+            ViewData["firstname"] = firstname;
+            ViewData["lastname"] = lastname;
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
