@@ -3,30 +3,34 @@
 }
 
 header{
-    background-color: red;
-    height:20vw;
-    width: 80vw;  
+    background-color: indianred;
+    height:200px;
 }
 
 nav{
-    width:20vw;
-    background-color: black;
+    width:30vw;
+    background-color: grey;
     color:white;
-    
-    }
+   
+}
+
+.logo{
+    height:100px;
+    width: 100px;
+}
 
 article{
-    height:= 70vw;
-    background-color: purple;
-    width:80vw;
+    height:520px;
+    background-color: antiquewhite;
+    width:70vw;
 }
 
 footer{
-    background-color: orange;
+    background-color: lightyellow;
     position:fixed;
     bottom:0px;
-    width:80vw;
-    height: 10vw;
+    width:100%;
+    height: 50PX;
 }
 
 .content{

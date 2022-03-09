@@ -28,6 +28,12 @@ namespace Feestgangers.Controllers
             return View();
         }
 
+        [Route("contact")]
+        public IActionResult contact()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
