@@ -36,12 +36,12 @@ namespace Feestgangers.Controllers
 
         [HttpPost]
        
-        public IActionResult contact(string firstname, string lastname)
+        public IActionResult contact(person person)
         {
-            ViewData["firstname"] = firstname;
-            ViewData["lastname"] = lastname;
+            ViewData["firstname"] = person.firstname;
+            ViewData["lastname"] = person.lastname;
 
-            return View();
+            return View(person);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
