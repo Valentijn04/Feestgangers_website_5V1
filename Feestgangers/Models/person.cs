@@ -1,6 +1,6 @@
 ﻿namespace Feestgangers.Models
 {
-    public class Class
+    public class Person
     {
         public string firstname { get; set; }
 

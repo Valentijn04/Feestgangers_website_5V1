@@ -36,7 +36,7 @@ namespace Feestgangers.Controllers
 
         [HttpPost]
        
-        public IActionResult contact(person person)
+        public IActionResult contact(Person person)
         {
             ViewData["firstname"] = person.firstname;
             ViewData["lastname"] = person.lastname;
