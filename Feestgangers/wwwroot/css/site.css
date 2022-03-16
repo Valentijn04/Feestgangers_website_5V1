@@ -17,10 +17,12 @@ nav {
     height:100px;
     width: 100px;
 }
-
 article {
     background-color: antiquewhite;
-    width: 70vw;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -46,11 +48,15 @@ element.style {
   
 }
 
-.event{
-    position: flex;
-    background-color: red;
-    padding: 20 px;
+.event {
+    position: relative;
+    width: 15vw;
+    height: 9vw;
+    background-color: darkslategrey;
     margin: 10px;
-    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
