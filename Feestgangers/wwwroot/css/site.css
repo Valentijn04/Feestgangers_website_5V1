@@ -35,6 +35,7 @@ footer {
 
 footer {
     display: block;
+    position: relative;
 }
 .content{
     display:flex;
