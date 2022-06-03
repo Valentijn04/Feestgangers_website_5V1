@@ -1,4 +1,22 @@
-﻿@{
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="text-center">
+    <h1>Alle Namen!</h1>
+    @if (Model != null)
+    {
+        @foreach (string naam in Model)
+           {
+            <p>@naam</p>
+        }
+    }
+</div>
+
+
+@*@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -241,4 +259,4 @@
         <option>dinsdag</option>
     </select>
 </div>
-
+*@

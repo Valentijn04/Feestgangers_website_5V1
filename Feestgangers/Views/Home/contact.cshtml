@@ -6,11 +6,11 @@
 <form method="post">
     <div>
     <label for="name"></label>
-    voornaam: <input type= "text" name="firstname" /></div>
+    firstname: <input type= "text" name="firstname" /></div>
 
    <div>
    <label for="name"></label>
-    achternaam: <input type="text" name="lastname" />
+    lastname: <input type="text" name="lastname" />
     </div>
 
     <div>
@@ -19,16 +19,16 @@
     </div>
 
         <div>
-    <label for="Phone"></label>
-    Phone: <input type = "text" name="Phone"
+    <label for="phone"></label>
+    phone: <input type = "text" name="phone"
     </div>
 
         <div>
-    <label for="Adress"></label>
-    Adress: <input type = "text" name="Adress"
+    <label for="adress"></label>
+    adress: <input type = "text" name="adress"
     </div>
 
      <input type="submit" value="opslaan" />
 </form>
 
-<p>Hallo @ViewData["firstname"] die achternaame @ViewData["lastname"] heeft</p>
+<p>Hallo @ViewData["firstname"]  @ViewData["lastname"] welkom!</p>

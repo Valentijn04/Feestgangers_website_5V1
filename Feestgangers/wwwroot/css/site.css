@@ -4,11 +4,11 @@
 
 header {
     background-color: indianred;
-    height: 200px;
+    height: 150px;
 }
 
 nav {
-    width: 20%;
+    width: 10%;
     background-color: grey;
     color: white;
 }
@@ -19,7 +19,7 @@ nav {
 }
 article {
     background-color: antiquewhite;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -30,7 +30,7 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 50PX;
+    height: 100PX;
 }
 
 footer {

@@ -1,11 +1,8 @@
 ﻿using Feestgangers.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Feestgangers.Controllers
 {
@@ -20,7 +17,17 @@ namespace Feestgangers.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var rows = Database.DatabaseConnector.GetRows("Select * from festival");
+
+            List<string> names = new List<string>();
+
+            foreach (var row in rows)
+            {
+
+                names.Add(row["naam"].ToString());
+            }
+            
+            return View(names);
         }
 
         public IActionResult Privacy()
@@ -35,7 +42,7 @@ namespace Feestgangers.Controllers
         }
 
         [HttpPost]
-       
+
         public IActionResult contact(Person person)
         {
             ViewData["firstname"] = person.firstname;
