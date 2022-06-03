@@ -36,19 +36,22 @@ namespace Feestgangers.Controllers
         }
 
         [Route("contact")]
-        public IActionResult contact()
+
+        public IActionResult Contact()
         {
             return View();
         }
 
+
+        [Route("contact")]
         [HttpPost]
 
-        public IActionResult contact(Person person)
+        public IActionResult Contact(string firstname, string lastname)
         {
-            ViewData["firstname"] = person.firstname;
-            ViewData["lastname"] = person.lastname;
+            ViewData["firstname"] = firstname;
+            ViewData["lastname"] = lastname;
 
-            return View(person);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
