@@ -84,3 +84,17 @@ element.style {
     color: black;
     border: 2px solid #555555;
 }
+
+form{
+white-space: nowrap;
+line-height: 60px;
+}
+
+.contactform label {
+    width: 100px;
+}
+
+form.ErrorMessage{
+    color: red;
+    margin-left: 10px;
+}

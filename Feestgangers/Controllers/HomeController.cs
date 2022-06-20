@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Diagnostics;
-using MySql.Data; 
+using MySql.Data;
+using Feestgangers.Database;
+using System;
 
 namespace Feestgangers.Controllers
 {
@@ -18,17 +20,10 @@ namespace Feestgangers.Controllers
 
         public IActionResult Index()
         {
-            var rows = Database.DatabaseConnector.GetRows("Select * from festival");
-
-            List<string> names = new List<string>();
-
-            foreach (var row in rows)
-            {
-
-                names.Add(row["naam"].ToString());
-            }
             
-            return View(names);
+            var products =GetAllProducts();
+
+            return View(products);
         }
 
         public IActionResult Privacy()
@@ -65,5 +60,28 @@ namespace Feestgangers.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public List<Product> GetAllProducts()
+        {
+            var rows = DatabaseConnector.GetRows("select * from product");
+
+            List<Product> products = new List<Product>();
+
+            foreach (var row in rows)
+            {
+
+                Product p = new Product();
+                p.festival = row["festival"].ToString();
+                p.artiesten = row["artiesten"].ToString();
+                p.Planning = Convert.ToInt32(row["Planning"]);
+
+                products.Add(p);
+
+            }
+
+            return products;
+
+        }
+
     }
 }

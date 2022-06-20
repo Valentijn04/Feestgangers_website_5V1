@@ -7,9 +7,9 @@ namespace Feestgangers.Database
 {
     public class Product
     {
-        public string? festival { get; set; }
+        public string festival { get; set; }
 
-        public string? artiesten { get; set; }
+        public string artiesten { get; set; }
 
         public int Planning  { get; set; } 
     }
