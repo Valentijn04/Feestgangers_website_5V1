@@ -42,16 +42,21 @@ namespace Feestgangers.Controllers
             return View();
         }
 
+        [Route("Succes")]
+        public IActionResult Succes()
+        {
+            return View();
+        }
 
         [Route("contact")]
         [HttpPost]
 
-        public IActionResult Contact(string firstname, string lastname)
+        public IActionResult Contact(Person person)
         {
-            ViewData["firstname"] = firstname;
-            ViewData["lastname"] = lastname;
+            if (ModelState.IsValid)
+                return Redirect("/Succes");
 
-            return View();
+            return View(person);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

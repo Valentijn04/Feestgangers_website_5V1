@@ -1,12 +1,45 @@
-﻿@{
+﻿@model Person
+@{
     ViewData["Title"] = "Contact";
 }
 <h1>@ViewData["Title"]</h1>
 
 <form method="post">
-    Voornaam: <input type="text" name ="firstname" />
-    Achternaam: <input type="text" name="lastname" />
-    <input type="submit" value="opslaan" />
+    <div>
+        <label for="firstname" >Voornaam</label>
+        <input type="text" name ="firstname" />
+    </div>
+    @Html.ValidationMessageFor(m => m.Firstname)
+
+    <div>
+        <label for="lastname" >Achternaam</label>
+        <input type="text" name ="lastname" />
+    </div>
+    @Html.ValidationMessageFor(m => m.Lastname)
+
+    <div>
+        <label for="email" >E-Mail</label>
+        <input type="text" name ="email" />
+    </div>
+    @Html.ValidationMessageFor(m => m.Email)
+
+    <div>
+        <label for="phone" >Telefoon</label>
+        <input type="text" name ="phone" />
+    </div>
+
+    <div>
+        <label for="address" >Adres</label>
+        <input type="text" name ="address" />
+    </div>
+
+    <div>
+        <label for="description" >Beschrijving</label>
+        <input type="text" name ="description" />
+    </div>
+    <input type="submit" value="verstuur"  />
 </form>
 
-<p>Hallo @ViewData["firstname"] met de achternaam @ViewData["lastname"]</p>
+@if(Model != null){
+    <p>Hallo @Model.Firstname met de achternaam @Model.Lastname</p>
+}
